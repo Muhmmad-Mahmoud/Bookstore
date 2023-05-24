@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>مكتبة الكتب</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../Css/style.css"> -->
+    <link rel="stylesheet" href="../Css/book.css">
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Start The Header  -->
+    <header>
+      <div class="menu-icon">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../imgs/logo.png" alt="شعار المكتبة" height="100" title="الكتب">
+          </a>
+        </div>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search">
+        <img src="../imgs/ser.png" alt="" class="img-ic">
+        <form class="search-form">
+          <input type="text" name="search_for" id="search_for" class="search_for" placeholder="ابحث عن كتاب">
+          <button type="submit" class="search-icon"><img src="../imgs/ser.png" alt=""></button>
+        </form>
+      </div>
+      <!-- End Search bar -->
+
+      <!--    Nav Bar     -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home </a></li>
+          <li><a href="Html/conact_us.html">Contact Us </a></li>
+          <li><a href="Html/conact_us.html">About Us </a></li>
+        </ul>
+      </nav>
+      <!--   End Nav Bar     -->
+      <div class="menu-ic">
+        <div>
+          <img class="search-icon2" src="../imgs/ser.png" alt="">
+        </div>
+        <button class="btn-menu" onclick="document.getElementById('sec').style='display: block;'">
+          <img class="menu" src="../imgs/menu.png" alt=" Menu" height="100" title="الكتب">
+        </button>
+      </div>
+    </header>
+
+
+    <!-- End The Header  -->
+
+    <!-- Start Main -->
+    <main>
+      <div class="contain">
+        <div class="image-card">
+          <img src="../imgs/business/24.png" alt="">
+        </div>
+
+        <div class="data">
+          <h2 class="tittle">إغواء العقل الباطن: سيكولوجية التأثير العاطفي في الدعاية والإعلان</h2>
+          <p class="author">روبرت هيث </p>
+          <p class="author">ترجمة محمد عثمان خليفة مراجعة هاني فتحي سليمان</p>
+          <div class="detail">
+            <p class="section">إدارة أعمال</p>
+            <p class="count">١٥١,٨٣٢ كلمة</p>
+          </div>
+          <hr>
+          <p class="detailes">تجمعنا بالإعلانات علاقةُ حبٍّ وكراهيةٍ في الوقت نفسِه. إن الهدفَ من الإعلانات هو أن نبقى
+            على
+            صلةٍ دائمةٍ بالمنتجات والأفكار الجديدة. وفي أفضل الأحوال، تُقدِّم الحملاتُ الإعلانيةُ المبدِعةُ نوعًا من
+            الترفيه، لكنَّ ما يُقْلِقنا هو أن الإعلانات يمكن أن تتسلَّلَ إلينا «خُفْيةً» بطريقةٍ أو بأخرى، وقد تؤثِّرُ
+            علينا دون أن نَدري؛ ولهذا السبب نتجاهلها، ظنًّا مِنَّا أننا إن لم نُعِرْها انتباهنا، فلن نتذكَّرها، ولن
+            تؤثِّر
+            فينا.
+
+            لكنَّ المفارقة هي أنَّ هذا التجاهُل يمكن في الحقيقة أن يَمنَح الإعلاناتِ مزيدًا من القوة. وفي هذا الكتاب،
+            يكشفُ لنا د. روبرت هيث حقيقةَ أن الطريقة التي نتعاملُ بها مع الإعلانات — على كلا المستوَيَيْن: الواعي
+            واللاواعي — يمكن أن تؤديَ فعليًّا إلى زيادة تأثيرها على عواطفنا التي تُعَدُّ الدافعَ الأساسيَّ وراء قراراتنا
+            وعلاقاتنا. اعتمادًا على أبحاثٍ مُوسَّعةٍ في علم النَّفس وعلم الأعصاب، يكشفُ لنا هذا الكتابُ طبيعةَ عالم
+            الدعاية والإعلان الجديد الجريء، باستخدام أمثلة توضيحية لحملات إعلانية حقَّقت نجاحًا فائقًا دون أن يتمكَّنَ
+            أحدٌ تقريبًا مِن تذكُّر الرسالة التي كانت تُحاوِل إيصالَها.
+          </p>
+          <div class="download-books">
+            <h3>تحميل كتاب
+              إغواء العقل الباطن </h3>
+            <ul class="links">
+              <li>
+                <img src="../imgs/pdf.svg" alt="">
+                <a href="https://downloads.hindawi.org/books/30582583.pdf">تحميل الكتاب </a>
+              </li>
+              <li id="view">
+                <button onclick="
+          document.getElementById('pdf').style.display = 'block';
+          document.getElementById('view').style.background = 'var(--background-two)';
+          
+                    ">
+                  <img src="../imgs/pdf.svg" alt="">
+                  قراءة الكتاب
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pdf" id="pdf">
+            <iframe class="pdf-book" src="/pdf/shop.pdf"></iframe>
+          </div>
+
+
+          <div class="about">
+            <h3 class="th">
+              تاريخ إصدارات هذا الكتاب‎‎
+            </h3>
+            <h3>
+              صدر الكتاب الأصلي باللغة الإنجليزية عام ٢٠١٠. </h3>
+            <h3>
+              صدرت هذه الترجمة عن مؤسسة هنداوي عام ٢٠١٩.
+            </h3>
+          </div>
+
+
+    </main>
+    <!-- End Main -->
+
+
+
+  </body>
+
+</html>

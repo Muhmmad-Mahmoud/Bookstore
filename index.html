@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Bookstore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <!--  Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Start The Header  -->
+    <div class="header">
+      <header>
+        <div class="menu-icon">
+          <div class="logo">
+            <a href="index.html">
+              <img src="imgs/logo.png" alt="شعار المكتبة" height="100" title="الكتب">
+            </a>
+          </div>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search">
+          <img id="search-iconM" src="imgs/ser.png" alt="" class="img-ic">
+          <form class="search-form">
+            <input type="text" name="search_for" id="search_for" class="search_for" placeholder="ابحث عن كتاب">
+            <button type="submit" class="search-icon">
+              <img id="search-iconM" src="imgs/ser.png" alt="">
+            </button>
+          </form>
+        </div>
+        <!-- End Search bar -->
+
+        <!--    Nav Bar     -->
+        <nav>
+          <ul>
+            <button onclick="
+            document.getElementById('search-iconM').src = 'imgs/serwhite.png'
+        document.getElementById('whiteState').style.display = 'block'
+        document.getElementById('dark').style.display = 'none'
+          document.documentElement.style.setProperty('--mainColor', '#0f0f0f');
+          document.documentElement.style.setProperty('--backGroundColor', '#0f0f0f');
+          document.documentElement.style.setProperty('--mainBorder', 'white');
+          document.documentElement.style.setProperty('--text-color', 'white');
+        ">
+              <svg class="dark" id="dark" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                color="#D65A31" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                style="color: rgb(214, 90, 49);">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z">
+                </path>
+              </svg>
+            </button>
+            <button onclick="
+        document.getElementById('dark').style.display = 'block'
+        document.getElementById('whiteState').style.display = 'none'
+        document.documentElement.style.setProperty('--mainColor', 'white');
+          document.documentElement.style.setProperty('--backGroundColor', 'white');
+          document.documentElement.style.setProperty('--mainBorder', '#ff940f');
+          document.documentElement.style.setProperty('--text-color', 'ff940');
+
+       
+       
+        ">
+              <svg class="whiteState" id="whiteState" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 24 24" color="#D65A31" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                style="color: rgb(214, 90, 49);">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z">
+                </path>
+              </svg>
+            </button>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Html/conact_us.html">Contact Us </a></li>
+          </ul>
+        </nav>
+        <!--   End Nav Bar     -->
+
+        <div class="menu-ic">
+          <div>
+            <img class="search-icon2" src="imgs/ser.png" alt="">
+          </div>
+          <button class="btn-menu" id="open" onclick="
+        document.getElementById('sections').style='display: block';
+        document.getElementById('open').style='display: none';
+        document.getElementById('close').style='display: block';
+        
+        ">
+            <img class="menu open" src="imgs/menu.png" alt=" Menu" height="100" title="الكتب">
+          </button>
+          <button class="btn-menu" onclick="document.getElementById('sections').style='display: block;';
+        document.getElementById('open').style='display: block';
+        document.getElementById('close').style='display: none';
+        document.getElementById('sections').style='display: none';
+
+        ">
+            <svg id="close" class="menu close" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- End The Header  -->
+
+      <div class="sections" id="sections">
+        <ul>
+          <button class="Business" onclick="
+        document.querySelector('.Business').style.backgroundColor = 'var(--background-two)';
+        document.querySelector('.Technology').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        document.querySelector('.Language-Science').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        ">
+            <a href="#Business">
+              إدارة أعمال
+            </a>
+          </button>
+          <button class="Technology" onclick="
+        document.querySelector('.Technology').style.backgroundColor = 'var(--background-two)';
+        document.querySelector('.Business').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        document.querySelector('.Language-Science').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        ">
+            <a href="#Technology">
+              تكنولوجيا
+            </a>
+          </button>
+          <button class="Language-Science" onclick="
+        document.querySelector('.Language-Science').style.backgroundColor = 'var(--background-two)';
+        document.querySelector('.Technology').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        document.querySelector('.Business').style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        ">
+            <a href="#Language-Science">
+              علوم اللغة
+            </a>
+          </button>
+        </ul>
+      </div>
+
+    </div>
+    <!--   All content    -->
+    <div class="content-box">
+      <!-- Start The Main  -->
+      <main>
+
+        <!-- إدارة أعمال-->
+        <div class="sections-m" id="Business">
+
+          <div class="tittle-section">
+            <h3>إدارة أعمال </h3>
+          </div>
+
+          <svg class="chevron-right" id="rightChevron" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
+          <svg class="chevron-left" id="leftChevron" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+          </svg>
+
+          <section class="align_books" id="align_books">
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/21.png" alt="غلاف الكتاب">
+                <h2> التسويق</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/26.png" alt="غلاف الكتاب">
+                <h2> الإعلانات والتصميم </h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book3.html">
+                <img src="imgs/business/23.png" alt="غلاف الكتاب">
+                <h2> شركة المستقبل </h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book4.html">
+                <img src="imgs/business/22.png" alt="غلاف الكتاب">
+                <h2> ريادة الأعمال </h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book5.html">
+                <img src="imgs/business/24.png" alt="غلاف الكتاب">
+                <h2> إغواءالعقل الباطن</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/25.png" alt="غلاف الكتاب">
+                <h2> صناعة سويسرية </h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/27.png" alt="غلاف الكتاب">
+                <h2>صفقات وشيكة </h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/28.png" alt="غلاف الكتاب">
+                <h2> ماكينة الأفكار</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/29.png" alt="غلاف الكتاب">
+                <h2> العقل والقلب والشجاعة</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/30.png" alt="غلاف الكتاب">
+                <h2> الجمهور</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/31.png" alt="غلاف الكتاب">
+                <h2> فك الشفرة</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/32.png" alt="غلاف الكتاب">
+                <h2> الموظف غير المرئي</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/33.png" alt="غلاف الكتاب">
+                <h2> لماذا تعتمد على الحظ؟</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/34.png" alt="غلاف الكتاب">
+                <h2> فيدكس: قصة نجاح</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/35.png" alt="غلاف الكتاب">
+                <h2> مَنْ قَتَل الإبداعَ؟</h2>
+              </a>
+            </div>
+
+
+          </section>
+          <div class="show-more">
+            <hr class="hr_line">
+            <!--  js   -->
+            <button class="shmore-btn" id="shmore-btn" onclick="document.getElementById('align_books').style.display = 'grid';
+        document.getElementById('align_books').style.gridTemplateColumns = 'repeat(auto-fill, minmax(199px,1fr))';
+        document.getElementById('align_books').style.gridRowGap = '30px';
+        document.getElementById('shmore-btn').style.display = 'none';
+        document.getElementById('shless-btn').style.display = 'block' ; 
+        document.getElementById('rightChevron').style.display = 'none' ; 
+        document.getElementById('leftChevron').style.display = 'none' ; 
+        
+        "> Show More </button>
+
+            <button class="shless-btn" id="shless-btn" onclick="document.getElementById('align_books').style.display = 'flex';
+            document.getElementById('shless-btn').style.display = 'none' ;
+            document.getElementById('shmore-btn').style.display = 'block';
+            document.getElementById('align_books').style.gridGap = '5px';
+            document.getElementById('rightChevron').style.display = 'block' ; 
+            document.getElementById('leftChevron').style.display = 'block' ; 
+
+            ">Show less</button>
+            <!--  js   -->
+          </div>
+          <!-- End First Section -->
+
+        </div>
+        <!-- إدارة أعمال-->
+
+        <!-- تكنولوجيا -->
+        <div class="sections-m" id="Technology">
+
+          <!-- Start First Section -->
+          <div class="tittle-section">
+            <h3> تكنولوجيا </h3>
+          </div>
+
+
+          <svg class="chevron-right" id="rightChevron1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
+          <svg class="chevron-left" id="leftChevron1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+          </svg>
+
+          <section class="align_books " id="sec2">
+
+            <div class="books">
+              <a href="Html/book6.html">
+                <img src="imgs/business/40.png" alt="غلاف الكتاب">
+                <h2> علم الروبوتات</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/41.png" alt="غلاف الكتاب">
+                <h2> البيانات الضخمة</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book8.html">
+                <img src="imgs/business/42.png" alt="غلاف الكتاب">
+                <h2> ذكاء اصطناعي متوافق مع البشر</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book9.html">
+                <img src="imgs/business/43.png" alt="غلاف الكتاب">
+                <h2> تفاعل متسلسل</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/44.png" alt="غلاف الكتاب">
+                <h2> مقدمة إلى وسائل الإعلام الجديدة</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/45.png" alt="غلاف الكتاب">
+                <h2> الطباعة الثلاثية الأبعاد</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/46.png" alt="غلاف الكتاب">
+                <h2> المكانية الرقمية</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/47.png" alt="غلاف الكتاب">
+                <h2> الكون الرقمي</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/48.png" alt="غلاف الكتاب">
+                <h2> علم التشفير</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/49.png" alt="غلاف الكتاب">
+                <h2> نحو ثقافة إبداعية جديدة</h2>
+              </a>
+            </div>
+
+
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/50.png" alt="غلاف الكتاب">
+                <h2> الطوفان الرقمي</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/51.png" alt="غلاف الكتاب">
+                <h2> المعلومات</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/52.png" alt="غلاف الكتاب">
+                <h2> الكود المنظِّم للفضاء الإلكتروني</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/53.jpg" alt="غلاف الكتاب">
+                <h2> خدعة التكنولوجيا</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/54.jpg" alt="غلاف الكتاب">
+                <h2> تكنولوجيا 2030 </h2>
+              </a>
+            </div>
+
+
+
+          </section>
+          <div class="show-more">
+            <hr class="hr_line">
+            <!--  js   -->
+            <script>
+              const showMoreButton = document.getElementById( 'shmore-btn1' );
+
+              showMoreButton.addEventListener( 'click', () => {
+                showMoreButton.style.backgroundColor = 'var(--background-two)';
+              } );
+
+            </script>
+            <button class="shmore-btn" id="shmore-btn1" onclick="document.getElementById('sec2').style.display = 'grid';
+        document.getElementById('sec2').style.gridTemplateColumns = 'repeat(auto-fill, minmax(199px,1fr))';
+        document.getElementById('sec2').style.gridRowGap = '30px';
+        document.getElementById('shmore-btn1').style.display = 'none';
+        document.getElementById('shless-btn1').style.display = 'block' ; 
+        document.getElementById('rightChevron1').style.display = 'none' ; 
+        document.getElementById('leftChevron1').style.display = 'none' ; 
+        
+        "> Show More </button>
+
+            <button id="shless-btn1" class="shless-btn" onclick="document.getElementById('sec2').style.display = 'flex';
+            document.getElementById('shless-btn1').style.display = 'none' ;
+            document.getElementById('shmore-btn1').style.display = 'block';
+            document.getElementById('sec2').style.gridGap = '5px';
+            document.getElementById('rightChevron1').style.display = 'block' ; 
+            document.getElementById('leftChevron1').style.display = 'block' ; 
+
+            ">Show less</button>
+          </div>
+
+        </div>
+        <!-- تكنولوجيا -->
+
+        <!-- علوم اللغة -->
+        <div class="sections-m" id="Language-Science">
+
+          <!-- Start third Section -->
+          <div class="tittle-section">
+            <h3>علوم اللغة </h3>
+          </div>
+
+          <svg class="chevron-right" id="rightChevron2" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
+          <svg class="chevron-left" id="leftChevron2" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+          </svg>
+
+          <section class="align_books" id="sec3">
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/60.png" alt="غلاف الكتاب">
+                <h2> الخطاب والتغير الاجتماعي</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/61.png" alt="غلاف الكتاب">
+                <h2> الترجمة في العالم العربي </h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/62.png" alt="غلاف الكتاب">
+                <h2> تاريخ النحو العربي</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/63.png" alt="غلاف الكتاب">
+                <h2> مرشد المترجم</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/64.png" alt="غلاف الكتاب">
+                <h2> هذا النحو</h2>
+              </a>
+            </div>
+
+
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/65.png" alt="غلاف الكتاب">
+                <h2> تاريخ آداب اللغة العربية</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/66.png" alt="غلاف الكتاب">
+                <h2> تاريخ علوم اللغة العربية</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/67.png" alt="غلاف الكتاب">
+                <h2> لغة الجرائد</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/68.png" alt="غلاف الكتاب">
+                <h2> اللغة والدين والتقاليد في حياة الاستقلال</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/69.png" alt="غلاف الكتاب">
+                <h2> رسالة في الكتابة العربية المنقحة</h2>
+              </a>
+            </div>
+
+
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/70.png" alt="غلاف الكتاب">
+                <h2> لهجات العرب</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/71.png" alt="غلاف الكتاب">
+                <h2> لتحيا اللغة العربية يسقط سيبويه</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/72.png" alt="غلاف الكتاب">
+                <h2> رسالة الملائكة</h2>
+              </a>
+            </div>
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/73.png" alt="غلاف الكتاب">
+                <h2> جواهر البلاغة</h2>
+              </a>
+            </div>
+
+
+            <div class="books">
+              <a href="Html/book1.html">
+                <img src="imgs/business/74.png" alt="غلاف الكتاب">
+                <h2>مغالطات لغوية</h2>
+              </a>
+            </div>
+
+
+
+          </section>
+          <div class="show-more">
+            <hr class="hr_line">
+            <!--  js   -->
+            <button class="shmore-btn" id="shmore-btn2" onclick="document.getElementById('sec3').style.display = 'grid';
+        document.getElementById('sec3').style.gridTemplateColumns = 'repeat(auto-fill, minmax(199px,1fr))';
+        document.getElementById('sec3').style.gridRowGap = '30px';
+        document.getElementById('shmore-btn2').style.display = 'none';
+        document.getElementById('shless-btn2').style.display = 'block' ; 
+        document.getElementById('rightChevron2').style.display = 'none' ; 
+        document.getElementById('leftChevron2').style.display = 'none' ; 
+        
+        "> Show More </button>
+
+            <button class="shless-btn" id="shless-btn2" onclick="document.getElementById('sec3').style.display = 'flex';
+            document.getElementById('shless-btn2').style.display = 'none' ;
+            document.getElementById('shmore-btn2').style.display = 'block';
+            document.getElementById('sec3').style.gridGap = '5px';
+            document.getElementById('rightChevron2').style.display = 'block' ; 
+            document.getElementById('leftChevron2').style.display = 'block' ; 
+
+            ">Show less</button>
+            <!--  js   -->
+          </div>
+          <!-- End First Section -->
+
+        </div>
+        <!-- علوم اللغة -->
+
+      </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="about">
+      <h6> All Copyright reserved © Bookstore Team Developers </h6>
+      <br>
+
+      <div class="linkedinacounts">
+
+        <a href="https://www.linkedin.com/in/muhamadmahmoud/" target="__blank">
+          <div class="aboutUs">
+            <img src="imgs/li.png" alt="">
+            <h3>Mohamed Mahmoud Abdel Raouf</h3>
+          </div>
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/mohamed-magdy-ab41681a1/" target="_blank">
+          <div class="aboutUs">
+            <img src="imgs/li.png" alt="">
+            <h3>Muhammad Magdy</h3>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhamadmahmoud/" target="_blank">
+          <div class="aboutUs">
+            <img src="imgs/li.png" alt="">
+            <h3>Muhammad Mahmoud Korani</h3>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhmmad-omar/" target="_blank">
+          <div class="aboutUs">
+            <img src="imgs/li.png" alt="">
+            <h3>Muhammad Omar </h3>
+          </div>
+        </a>
+
+      </div>
+
+
+    </footer>
+
+  </body>
+
+</html>
